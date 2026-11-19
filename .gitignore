@@ -1,0 +1,4 @@
+.backbone/
+.env
+.env.*
+.DS_Store
