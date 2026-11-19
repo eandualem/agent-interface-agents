@@ -21,7 +21,7 @@ For example, a contributor could use this `agent.json`:
 }
 ```
 
-Include only skills and policies that apply. Use an empty policy list when none apply. Use regular files and relative paths within the definition so someone with a fresh checkout can use it. Check that each configured policy and every skill support file exists.
+Include only skills and policies that apply. Use an empty policy list when none apply. Keep instructions in AGENTS.md and omit runtime-specific startup files. Use regular files and relative paths within the definition so someone with a fresh checkout can use it. Check that each configured policy and every skill support file exists.
 
 To try a definition, copy its folder to an empty working directory. Select the runtime, model and effort from `agent.json` in your launcher. Give that runtime the local `AGENTS.md` and the listed policy files as instructions, and expose the bundled skill folders through its local skill mechanism. Run the example from the PR and compare the result with the expected outcome. The JSON describes these settings for the launcher or operator.
 
