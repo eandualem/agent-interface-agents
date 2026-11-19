@@ -23,6 +23,8 @@ For example, a contributor could use this `agent.json`:
 
 Include only skills and policies that apply. Use an empty policy list when none apply. Use regular files and relative paths within the definition so someone with a fresh checkout can use it. Check that each configured policy and every skill support file exists.
 
+To try a definition, copy its folder to an empty working directory. Select the runtime, model and effort from `agent.json` in your launcher. Give that runtime the local `AGENTS.md` and the listed policy files as instructions, and expose the bundled skill folders through its local skill mechanism. Run the example from the PR and compare the result with the expected outcome. The JSON describes these settings for the launcher or operator.
+
 Describe the reusable method in your own words or include material you have permission to share. Use synthetic examples. Keep credentials, account details, private work history, internal instructions and identifying metadata out of the entire contribution, including commit messages and PR text.
 
 In your PR, explain who the agent helps and how you tested it. A small example with an input and expected outcome lets reviewers try the definition. Outside contributors can open a PR directly from a fork.
